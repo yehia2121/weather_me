@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="shortcut icon" href="./imgs/storm.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top p-0">
+            <div class="container-fluid container-md">
+                <a class="navbar-brand text-capitalize fs-1 p-0" href="#">weatherMe</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto gap-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Today</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tommorow</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Monthly Forecast</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <section id="pointer"
+                class="position-absolute border border-2 d-flex justify-content-center align-items-center rounded rounded-circle">
+                <i class="fa-solid fa-sun fs-3 d-none"></i>
+                <i class="fa-solid fa-moon fs-3"></i>
+            </section>
+        </nav>
+    </header>
+
+    <main class="mt-xl-1 pt-xl-1">
+        <section class="position-relative mt-xl-1 pt-xl-1">
+            <div class="container-fluid vh-100">
+                <div class="row justify-content-between align-items-center h-100">
+                    <div class="col-12 d-flex flex-column align-items-center justify-content-center h-75 m-auto">
+                        <div class="input-group w-50 mb-3">
+                            <input type="text" id="weatherInp" class="form-control border-0 rounded-5 position-relative"
+                                placeholder="Find your location" aria-label="Recipient’s username"
+                                aria-describedby="button-addon2">
+                        </div>
+                        <div id="weather" class="weather position-relative w-75 rounded rounded-4 row flex-wrap">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="w-75 rounded rounded-top-5 fixed-bottom m-auto">
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

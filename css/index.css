@@ -1,0 +1,55 @@
+:root {
+    --bg-main-color: #1E1E1E;
+    --main-color: #FFF;
+}
+
+.light-mode {
+    --bg-main-color: #fff;
+    --main-color: #1E1E1E;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+#pointer {
+    cursor: pointer;
+}
+
+header section {
+    right: 2%;
+    top: 20%;
+    width: 47px;
+    height: 47px;
+    z-index: 999999;
+}
+
+body,
+header {
+    background: var(--bg-main-color) !important;
+    color: var(--main-color) !important;
+}
+
+a {
+    color: var(--main-color) !important;
+    font-size: 1.5rem !important;
+}
+
+main .fixed-bottom {
+    background: linear-gradient(#10C99C, #077989);
+    height: 2%;
+}
+
+.weather {
+    background: linear-gradient(130deg, #AD36CB 40%, #333333 60%);
+}
+
+input {
+    background: #D9D9D9 !important;
+}
+
+.col-lg .text-center .w-25 {
+    top: 20%;
+    right: 10%;
+}
